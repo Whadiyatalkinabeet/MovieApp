@@ -1,3 +1,3 @@
 # MovieApp
-Everything about film.
-Jon add ur shit pls.
+Everything about film.<br/>
+<strong>Jon add ur shit pls.</strong>
