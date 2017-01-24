@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="//code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	</head>
+	
+	
+	<body>
+		<footer>
+			<p style='color: black; font-size: 12px'>Created by Nyal Sadiq 2016 Heriot Watt University<p>
+		</footer>
+		<div class="wrap">
+			<div id="sign_up">
+				<h1>Sign Up!</h1>
+				<div style="text-align: center;" id="alert2"></div>
+				<p>Username</p>
+				<input class="wrap" type="text" id="getusername" name="username" placeholder="xJohnx" required/>
+				<div style="text-align: center;" id="alert1"></div>
+				<p>Secure Password</p>
+				<input class="wrap" type="password" id="getpassword" name="password" placeholder="apples24" required/>
+				<p>Re enter Password</p>
+				<input class="wrap" type="password" id="getpasswordrepeat" name="REpassword" placeholder="apples24" required/>
+			
+				<br>
+				<button id="secondary" type="button" name="submit" onclick="signup()">Submit</button>
+				<br><br>
+				<button id="secondary" type="button" onclick="window.location.replace('CWlogin.html')">Go Back</button>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+	
+		function signup() {
+			var username = document.getElementById("getusername").value;
+			var password = document.getElementById("getpassword").value;
+			var REpassword = document.getElementById("getpasswordrepeat").value;
+			document.getElementById("alert1").innerHTML = "";
+			document.getElementById("alert2").innerHTML = "";
+		
+			if (username == ""){
+				document.getElementById("alert1").innerHTML = "The username field must not be empty";
+				$("#getusername").effect("shake");
+				return;
+			}
+		
+			if (password == "" || REpassword == ""){
+				document.getElementById("getpassword").value = "";
+				document.getElementById("getpasswordrepeat").value = "";
+				document.getElementById("alert2").innerHTML = "The password fields must not be empty";
+				$("#getpassword").effect("shake");
+				$("#getpasswordrepeat").effect("shake");	
+				return;
+			}
+		
+			if (password != REpassword){
+				document.getElementById("getpassword").value = "";
+				document.getElementById("getpasswordrepeat").value = "";
+				document.getElementById("alert2").innerHTML = "The passwords that you entered do not match";
+				$("#getpassword").effect("shake");
+				$("#getpasswordrepeat").effect("shake");
+				return;
+			}
+		
+			if (confirm("Are you sure you wish to create a new account with the username: " + username + "?") == true) {
+		
+				$.post("signupper.php",
+				{
+					username: username,
+					password: password
+				},
+				function(data, status){
+					if (data == true) {
+						document.getElementById("alert2").innerHTML = "New Account Created. Your new user name is " + username;
+						document.getElementById("alert1").value = "";
+						document.getElementById("getusername").value = "";
+						document.getElementById("getpassword").value = "";
+						document.getElementById("getpasswordrepeat").value = "";
+					} else {
+						document.getElementById("getusername").value = "";
+						document.getElementById("getpassword").value = "";
+						document.getElementById("getpasswordrepeat").value = "";
+						document.getElementById("alert2").innerHTML = "Only letters and numbers please!";
+						$("#getpassword").effect("shake");
+						$("#getpasswordrepeat").effect("shake");
+						$("#getusername").effect("shake");
+					}
+				}, "json");
+
+			}
+		
+		}
+		</script>
+	</body>
+</html>
+

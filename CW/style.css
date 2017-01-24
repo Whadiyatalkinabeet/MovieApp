@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+body {
+	background: #448ed3 ;
+	font-family: "Lato" ;
+}
+
+p {
+	font-weight: bold;
+	font-family: "Lato" ;
+}
+.wrap {
+	width:250px;
+	height: auto;
+	margin: auto;
+	margin-top: 10%;
+}
+
+#sign_up {
+	margin-top: -70%;
+}
+
+.mainbutton {
+	width: 250px;
+	height: auto;
+	margin: auto;
+	
+}
+
+#movie {
+	width: 50%;
+	height: auto;
+	margin: auto;
+	border: 2px solid black;
+	text-align: center;
+}
+
+#movie img {
+		max-width:100%;
+		width:100%;
+}
+
+
+
+
+
+.mainbutton button {
+	width: 100%;
+	border-radius: 7px;
+	background: #000099;
+	text-decoration: center;
+	border: none;
+	color: white;
+	
+	padding-top: 14px;
+	padding-bottom: 14px;
+	outline: none;
+	font-size: 0.8em;
+	font-weight: bold;
+	font-family: "Lato" ;
+	border-bottom: 3px solid #307d63;
+	cursor: pointer;
+}
+
+.avatar {
+	width: 100%;
+	margin: auto;
+	width: 65px;
+	border-radius: 100px;
+	height: 65px;
+	background: #448ed3 ;
+	position: relative;
+	bottom: -15px;
+}
+.avatar img {
+	width: 55px;
+	height: 55px;
+	border-radius: 100px;
+	margin: auto;
+	border:3px solid #fff;
+	display: block;
+}
+.wrap input {
+	border: none;
+	background: #fff;
+  	font-family:Lato ;
+  	font-weight:700 ;
+	display: block;
+	height: 40px;
+	outline: none;
+	width: calc(100% - 24px) ;
+	margin: auto;
+	padding: 6px 12px 6px 12px;
+}
+
+.wrap input[type="username"], input[type="password"], input[type="text"], input[type="mobile"], input[type="email"], input[type="submit"] {
+	border-radius: 7px 7px 7px 7px ;
+}
+
+}
+
+
+
+.settings {
+	font-family: "Lato" ;
+}
+
+.wrap button {
+	width: 100%;
+	border-radius: 7px;
+	background: #b6ee65;
+	text-decoration: center;
+	border: none;
+	color: #51771a;
+	margin-top:-5px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	outline: none;
+	font-size: 13px;	
+	border-bottom: 3px solid #307d63;
+	cursor: pointer;
+}
+
+#secondary {
+	width: 100%;
+	border-radius: 7px;
+	background: #b6ee65;
+	text-decoration: center;
+	border: none;
+	color: #51771a;
+	margin-top:5px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	outline: none;
+	font-size: 13px;	
+	border-bottom: 3px solid #307d63;
+	cursor: pointer;
+}
+
+.sign_up {
+		text-align: center;
+}
