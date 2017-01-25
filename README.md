@@ -7,7 +7,7 @@ Everything about film.<br/>
 <li>Merge Log In and Movie Search Site and get rid of any uneccessary features.</li>
 <li>Discuss what main feature will be and implement.</li>
 <strong><p>while(True){</p></strong>
-<li>Add cool shit.</li>
-<li>Learn more cool shit.</li>
+<li>    Add cool shit.</li>
+<li>    Learn more cool shit.</li>
 <strong><p>}</p></strong>
 </ol>
