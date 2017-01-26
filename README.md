@@ -1,10 +1,8 @@
 # MovieApp
 Everything about film.<br/>
-<strong>Jon add ur shit pls.</strong>
-<br/>I have added my logger innerer as well as a sample website with good css within.
-<br/>
+Database Details: ns53 - abcns53354 - Table Name: users<br/>
 <ol>
-<li>Merge Log In and Movie Search Site and get rid of any uneccessary features.</li>
+<li><strike>Merge Log In and Movie Search Site and get rid of any uneccessary features.</strike></li>
 <li>Discuss what main feature will be and implement.</li>
 <li>Add cool shit.</li>
 <li>Learn more cool shit.</li>
