@@ -7,7 +7,7 @@
 	$username = "ns53";
 	$password = "abcns53354";
 	$databasename = "ns53";
-	$tablename= "cw_users";
+	$tablename= "users";
 
 	$connection = new mysqli($servername, $username, $password, $databasename);
 
@@ -25,7 +25,7 @@
 	if ($success) {
 
 
-		$statement = $connection->prepare("SELECT * FROM cw_users WHERE username= (?)");
+		$statement = $connection->prepare("SELECT * FROM MovieUsers WHERE username= (?)");
 		$statement->bind_param("s", $newusername);
 		$statement->execute();
 		$statement->store_result();

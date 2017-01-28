@@ -1,4 +1,14 @@
 <html>
+<?php
+	ini_set('display_errors',1);
+	error_reporting(E_ALL);
+	session_start();
+	if (isset($_SESSION['newusername'])){
+		echo "";
+	} else {
+		echo "Not found";
+	}
+?>
 	<head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
 	<script src="https://use.fontawesome.com/315005207c.js"></script>
@@ -16,13 +26,17 @@
 	</head>
 	<body>
 		<ul>
-		  <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+		  <li><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
 		  <li><a href="#about">About </a></li>
 		  <li><a href="#about">Library</a></li>
+		  <li><a href="#myaccount">My Account</a></li>
 		</ul>
 		<div class="intro">
 		<h1><i class="fa fa-film"></i> The Movie Portal  </h1>
 		<h2>Your one-stop portal for all your movie needs.</h2>
+		<?php
+			echo "<h2>Welcome " . $_SESSION['newusername'] . "</h2>";
+		?>
 		</div>
 
 		<div id="main" class="linklist">

@@ -21,19 +21,23 @@
 
 	if ($success) {
 	
-		$statement = $connection->prepare("SELECT * FROM cw_users WHERE username= (?) AND password= (?)");
-		$statement->bind_param("ss", $user, $newpassword);
+		$statement = $connection->prepare("SELECT password FROM MovieUsers WHERE username= (?)");
+		$statement->bind_param("s", $user);
 		$statement->execute();
 		$statement->store_result();
-
-
-		$count = $statement->num_rows;
-
-		if($count==1){
+		
+		$statement->bind_result($passwordfromDB);
+		
+		$options = ['cost' => 11,];
+		
+		$hash = password_hash($newpassword, PASSWORD_BCRYPT, $options);
+			
+		if(password_verify($newpassword, $hash)){
 			echo json_encode("true");
 		} else {
 			echo json_encode("false");
 		}
+
 
 	} else {
 		echo json_encode("false");

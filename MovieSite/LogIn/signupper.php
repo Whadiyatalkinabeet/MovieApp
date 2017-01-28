@@ -9,7 +9,7 @@
 	$username = "ns53";
 	$password = "abcns53354";
 	$databasename = "ns53";
-	$tablename= "my_users";
+	$tablename= "MovieUsers";
 
 	$connection = new mysqli($servername, $username, $password, $databasename);
 
@@ -26,9 +26,12 @@
 	$success2 = preg_match($pattern, $password);
 
 	if ($success1 && $success2) {
+		
+		$options = ['cost' => 11,];
+		$hash = password_hash($password, PASSWORD_BCRYPT, $options);
 
-		$statement = $connection->prepare("INSERT INTO cw_users (username, password, new) values (?, ?, 1)");
-		$statement->bind_Param("ss", $username, $password);
+		$statement = $connection->prepare("INSERT INTO MovieUsers (username, password) values (?, ?)");
+		$statement->bind_Param("ss", $username, $hash);
 
 		$statement->execute();
 

@@ -9,7 +9,6 @@ ini_set('display_errors',1);
 		echo "<footer><p style='color: white; font-size: 12px'>Created by Nyal Sadiq 2016 Heriot Watt University<p></footer>";
 		echo "<h1 style='text-align: center'>Movies.</h1>";
 		echo "<h2 style='text-align: center'>Please enter your password, " . $_SESSION['newusername'] . "</h2>";
-		
 	} else {
 		echo "Not found";
 	}
@@ -21,7 +20,7 @@ ini_set('display_errors',1);
 		<title>Login</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="assets/css/main.css" rel="stylesheet"/>
+		<link href="../Design/assets/css/main.css" rel="stylesheet"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="//code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
@@ -58,12 +57,14 @@ ini_set('display_errors',1);
 			function(data, status){
 				
 				if (data == "true"){
-						window.location.replace("CWloggedin.php");
-				} else {
+						window.location.replace("../Aggregator/index.php");
+				} else if (data == "false"){
 						$("#password").effect("shake");
 						document.getElementById("password").value = "";
 						alert("Invalid username/password");
 						window.location.replace("CWlogin.html");
+				} else {
+					alert(data);
 				}
 			}, "json");
 			
