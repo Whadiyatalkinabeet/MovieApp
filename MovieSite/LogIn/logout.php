@@ -1,7 +1,7 @@
 <?php
-
-	session_unset();
-	session_destroy();
-	header("location:CWlogin.html");
-
+   session_start();
+   
+   if(session_destroy()) {
+      header("Location:CWlogin.html");
+   }
 ?>

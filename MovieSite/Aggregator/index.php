@@ -3,11 +3,9 @@
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
 	session_start();
-	if (isset($_SESSION['newusername'])){
-		echo "";
-	} else {
-		echo "Not found";
-	}
+	if (!isset($_SESSION['newusername'])){
+		header("location:../LogIn/CWlogin.html");
+	} 
 ?>
 	<head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
@@ -30,6 +28,7 @@
 		  <li><a href="#about">About </a></li>
 		  <li><a href="#about">Library</a></li>
 		  <li><a href="#myaccount">My Account</a></li>
+		  <li><a href="../LogIn/logout.php">Log Out</a></li>
 		</ul>
 		<div class="intro">
 		<h1><i class="fa fa-film"></i> The Movie Portal  </h1>
