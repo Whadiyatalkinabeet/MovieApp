@@ -12,6 +12,7 @@ body {
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .linklist{
 	text-align:center;
@@ -19,6 +20,7 @@ body {
     margin-bottom: 5%;
     margin-right: 15%;
     margin-left: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 a:link {
     color: black;
