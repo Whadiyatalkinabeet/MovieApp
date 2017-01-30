@@ -26,13 +26,14 @@
 		$statement->execute();
 		$statement->store_result();
 		
-		$statement->bind_result($passwordfromDB);
+		$statement->bind_result($passwordfromDB1);
 		
-		$options = ['cost' => 11,];
 		
-		$hash = password_hash($newpassword, PASSWORD_BCRYPT, $options);
-			
-		if(password_verify($newpassword, $hash)){
+		while($statement->fetch()){
+			$passwordfromDB = $passwordfromDB1;
+		}
+		
+		if(password_verify($newpassword, $passwordfromDB)){
 			echo json_encode("true");
 		} else {
 			echo json_encode("false");
