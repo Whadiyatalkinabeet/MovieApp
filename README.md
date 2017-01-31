@@ -15,3 +15,4 @@ Database Details: ns53 - abcns53354 - Table Name: users<br/>
 LOG
 29/1/2017 Time Jon -> I changed your logout.php in ../LogIn to make it work with the main site. Also made the site inaccessible if not logged in.<br/>
 LOG 30/01/2017 00:38 Nyal -> Fixed the log in issue. Needs testing.
+Sup
