@@ -15,14 +15,6 @@ Don't forget to git pull before working!
 <li>Buy Google</li>
 </ol>
 
-LOG
-29/1/2017 Time Jon -> I changed your logout.php in ../LogIn to make it work with the main site. Also made the site inaccessible if not logged in.<br/>
-LOG 30/01/2017 00:38 Nyal -> Fixed the log in issue. Needs testing./
-LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.
-LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in '<head>' tags. Makes our site modular.
-LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.
-
-
 <b>Stuff to keep in mind when making changes</b>
 
 1 Make sure there are no dead-links (i.e. changing file names/locations and switching .html to .php or vice versa)
@@ -30,3 +22,15 @@ LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.
 2 Clean, modular code
 
 3 Comments
+
+<ol>
+<li>LOG 29/1/2017 Time Jon -> I changed your logout.php in ../LogIn to make it work with the main site. Also made the site inaccessible if not logged in.</li>
+<li>LOG 30/01/2017 00:38 Nyal -> Fixed the log in issue. Needs testing.</li>
+<li>LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.</li>
+<li>LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.</li>
+<li>LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in head tags. Makes our site modular.</li>
+<li>LOG 01/02/2017 21:30 Nyal -> Updated signupper.php and signup.html so usernames must be unique.</li>
+</ol>
+
+
+
