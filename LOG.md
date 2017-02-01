@@ -1,4 +1,4 @@
-<h1>Progress Log</h1>
+#Progress Log
 <p>Note any updates or changes here in the correct format</p>
 <p>We'll have thousands of log entries soon lol</p>
 <ol>
