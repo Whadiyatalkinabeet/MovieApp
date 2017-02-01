@@ -19,7 +19,7 @@ LOG
 29/1/2017 Time Jon -> I changed your logout.php in ../LogIn to make it work with the main site. Also made the site inaccessible if not logged in.<br/>
 LOG 30/01/2017 00:38 Nyal -> Fixed the log in issue. Needs testing.
 LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.
-LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in <head> tags. Makes our site modular.
+LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in '<head>' tags. Makes our site modular.
 
 
 <b>Stuff to keep in mind when making changes</b>
