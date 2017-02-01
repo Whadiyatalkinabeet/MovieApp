@@ -13,13 +13,9 @@
 		?>
 	</head>
 	<body>
-		<ul>
-		  <li><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-		  <li><a href="#about">About </a></li>
-		  <li><a href="#about">Library</a></li>
-		  <li><a href="#myaccount">My Account</a></li>
-		  <li><a href="../LogIn/logout.php">Log Out</a></li>
-		</ul>
+		<?php
+			include'navbar.php';
+		?>
 		<div class="intro">
 		<h1><i class="fa fa-film"></i> The Movie Portal  </h1>
 		<h2>Your one-stop portal for all your movie needs.</h2>
