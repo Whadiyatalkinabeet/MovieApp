@@ -1,6 +1,9 @@
 # MovieApp
 Everything about film.<br/>
 Database Details: ns53 - abcns53354 - Table Name: users<br/>
+
+Don't forget to git pull before working!
+
 <ol>
 <li><strike>Merge Log In and Movie Search Site and get rid of any uneccessary features.</strike></li>
 <li>Discuss what main feature will be and implement.</li>
@@ -15,6 +18,7 @@ Database Details: ns53 - abcns53354 - Table Name: users<br/>
 LOG
 29/1/2017 Time Jon -> I changed your logout.php in ../LogIn to make it work with the main site. Also made the site inaccessible if not logged in.<br/>
 LOG 30/01/2017 00:38 Nyal -> Fixed the log in issue. Needs testing.
+LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.
 LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in <head> tags. Makes our site modular.
 
 
