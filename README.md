@@ -2,8 +2,8 @@
 Everything about film.<br/>
 Database Details: ns53 - abcns53354 - Table Name: users<br/>
 
-Don't forget to git pull before working!
-<strong>Remember to update LOG file after working</strong>
+Don't forget to git pull before working!</br>
+<strong>Remember to update LOG file after working!</strong>
 
 <ol>
 <li><strike>Merge Log In and Movie Search Site and get rid of any uneccessary features.</strike></li>
