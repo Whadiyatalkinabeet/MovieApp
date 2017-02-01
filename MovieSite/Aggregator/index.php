@@ -151,7 +151,7 @@
 	            url: 'FindMovie.php',
 	            data: $('form').serialize(),
 	            success: function(result){
-
+                
 							SearchMovie(result);
 						}
 	          });

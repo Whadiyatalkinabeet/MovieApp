@@ -20,6 +20,7 @@ LOG
 LOG 30/01/2017 00:38 Nyal -> Fixed the log in issue. Needs testing.
 LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.
 LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in '<head>' tags. Makes our site modular.
+LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.
 
 
 <b>Stuff to keep in mind when making changes</b>
