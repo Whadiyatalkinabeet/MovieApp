@@ -15,3 +15,10 @@ Database Details: ns53 - abcns53354 - Table Name: users<br/>
 LOG
 29/1/2017 Time Jon -> I changed your logout.php in ../LogIn to make it work with the main site. Also made the site inaccessible if not logged in.<br/>
 LOG 30/01/2017 00:38 Nyal -> Fixed the log in issue. Needs testing.
+LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in <head> tags. Makes our site modular.
+
+
+<b>Stuff to keep in mind when making changes</b>
+1. Make sure there are no dead-links (i.e. changing file names/locations and switching .html to .php or vice versa)
+2. Clean, modular code
+3. Comments
