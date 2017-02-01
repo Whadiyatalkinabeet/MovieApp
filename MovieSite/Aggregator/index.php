@@ -8,19 +8,9 @@
 	} 
 ?>
 	<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
-	<script src="https://use.fontawesome.com/315005207c.js"></script>
-		 <!--<script type="text/javascript">
-	            $(document).ready(function(){
-	                 $("#NewReleases").click(function(){
-	                    $("#main").load("NewReleases.html");
-	                 });
-	            });
-	        </script>-->
-		<meta name="viewport" content="width=device-width", initial-scale="1">
-		
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-		<title>Portal: Aggregator by Jonathan Mendoza</title>
+		<?php
+			include'header.php';
+		?>
 	</head>
 	<body>
 		<ul>
