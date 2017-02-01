@@ -8,19 +8,9 @@
 	} 
 ?>
 	<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
-	<script src="https://use.fontawesome.com/315005207c.js"></script>
-		 <!--<script type="text/javascript">
-	            $(document).ready(function(){
-	                 $("#NewReleases").click(function(){
-	                    $("#main").load("NewReleases.html");
-	                 });
-	            });
-	        </script>-->
-		<meta name="viewport" content="width=device-width", initial-scale="1">
-		
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-		<title>Portal: Aggregator by Jonathan Mendoza</title>
+		<?php
+			include'header.php';
+		?>
 	</head>
 	<body>
 		<ul>
@@ -62,7 +52,7 @@
 					var title=result.results[count].title;
 					titleList = titleList + '<a href="javascript:void()" class="falselink" id="NewReleases" name="'+ title +'" onclick="MovieInfo(this.name,this.id)">' + title + '</a>' + '<br>';
 				}
-					titleList += '<br><h3><a href="index.html"> Back Home </a></h3>';
+					titleList += '<br><h3><a href="index.php"> Back Home </a></h3>';
 				document.getElementById("main").innerHTML=titleList;
 
 		    });
@@ -78,7 +68,7 @@
 					var title=result.results[count].title;
 					titleList = titleList + '<a href="javascript:void()" class="falselink" id="TopRated" name="'+ title +'" onclick="MovieInfo(this.name,this.id)">' + title + '</a>' + '<br>';
 				}
-				titleList += '<br><h3><a href="index.html"> Back Home </a></h3>';
+				titleList += '<br><h3><a href="index.php"> Back Home </a></h3>';
 				document.getElementById("main").innerHTML=titleList;
         		//alert(result.results[0].title);
 		    });
@@ -122,7 +112,7 @@
 				   plot + '<br>' + '<br>'+ 
 				   'Date released: ' + date + '<br>' +
 				   'Average rating: ' + rating + '<br> <div onclick="MovieReview(this.id)" id="'+ title +'"> <a href="javascript:void()" class="falselink">Get NYT Review and Alternate Summary</a></div>'+ '<br><br>' +
-				    '<a href="index.html"><h4>Back Home</h4></a>';
+				    '<a href="index.php"><h4>Back Home</h4></a>';
 			}
 		}
 		function MovieReview(movieTitle){
@@ -161,7 +151,7 @@
 	            url: 'FindMovie.php',
 	            data: $('form').serialize(),
 	            success: function(result){
-
+                
 							SearchMovie(result);
 						}
 	          });
@@ -179,7 +169,7 @@
 					var title = result.results[key].title;
 					titleList = titleList + '<a href="#" class="falselink" class="SearchMovie" name="'+ title +'" onclick="MovieInfo(this.name,this.class)">' + title + '</a>' + '<br>';
 				}
-				titleList += '<br><h3><a href="index.html"> Back Home </a></h3>';
+				titleList += '<br><h3><a href="index.php"> Back Home </a></h3>';
 				document.getElementById("main").innerHTML=titleList;
 		    });
 	}
