@@ -23,6 +23,6 @@ LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in '<head>' ta
 
 
 <b>Stuff to keep in mind when making changes</b>
-1. Make sure there are no dead-links (i.e. changing file names/locations and switching .html to .php or vice versa)
-2. Clean, modular code
-3. Comments
+1 Make sure there are no dead-links (i.e. changing file names/locations and switching .html to .php or vice versa)
+2 Clean, modular code
+3 Comments
