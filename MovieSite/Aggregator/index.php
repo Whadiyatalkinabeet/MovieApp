@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<?php
-			include'navbar.php';
+			include'nav.php';
 		?>
 		<div class="intro">
 		<h1><i class="fa fa-film"></i> The Movie Portal  </h1>
