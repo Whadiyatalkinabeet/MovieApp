@@ -55,7 +55,7 @@
 		}
 		
 		function TopRated(){
-			var url = "https://api.themoviedb.org/3/movie/top_rated?api_key=6d64a72486b47e66eaf157cafc5a0860&language=en-US&page=1";
+			var url = "APITopRated.php";
 			var From="TopRated";
 			window.history.pushState(null,null,'TopRated');//Mostly for future extensibility 
 			$.getJSON(url, function(result){
