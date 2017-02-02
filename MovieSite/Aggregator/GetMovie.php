@@ -1,5 +1,7 @@
  <?php
-    $url = "https://api.themoviedb.org/3/discover/movie?api_key=6d64a72486b47e66eaf157cafc5a0860&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
+    ini_set('display_errors',1);
+    error_reporting(E_ALL);
+    /*$url = "https://api.themoviedb.org/3/discover/movie?api_key=6d64a72486b47e66eaf157cafc5a0860&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
     $fcon = fopen($url, "r");
     if ($fcon) {
         while (!feof($fcon)) $data_json .= fgets($fcon, 4096);
@@ -11,5 +13,12 @@
     }
     else{
         echo "yes";
+    }*/
+    $url= "https://api.themoviedb.org/3/discover/movie?api_key=6d64a72486b47e66eaf157cafc5a0860&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
+    $fcon = fopen($url, "r");
+    if ($fcon) {
+        while (!feof($fcon)) $data_json .= fgets($fcon, 4096);
+        fclose($fcon);
     }
+    echo $data_json;
 ?> 
