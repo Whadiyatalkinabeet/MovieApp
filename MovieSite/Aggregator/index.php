@@ -39,7 +39,7 @@
 	</body>
 	<script>
 		function NewReleases(){
-			var url = "GetMovie.php";
+			var url = "APINewReleases.php";
 			var From="NewReleases";
 			window.history.pushState(null,null,'NewReleases');//Mostly for future extensibility 
 			$.getJSON(url, function(result){
