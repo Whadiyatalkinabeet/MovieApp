@@ -38,7 +38,17 @@
 		</div>
 		
 		<script type="text/javascript">
-	
+		function passwordShake(){
+				document.getElementById("getpassword").value = "";
+				document.getElementById("getpasswordrepeat").value = "";
+				$("#getpassword").effect("shake");
+				$("#getpasswordrepeat").effect("shake");
+		}
+		function userShake(){
+			document.getElementById("getusername").value = "";
+			$("#getusername").effect("shake");
+		}
+		
 		function signup() {
 			var username = document.getElementById("getusername").value;
 			var password = document.getElementById("getpassword").value;
@@ -47,26 +57,22 @@
 		
 			if (username == ""){
 				document.getElementById("getusername").placeholder = "The username field must not be empty";
-				$("#getusername").effect("shake");
+				userShake();
 				flag = true;
 			}
 		
 			if (password == "" || REpassword == ""){
-				document.getElementById("getpassword").value = "";
-				document.getElementById("getpasswordrepeat").value = "";
+				passwordShake();
 				document.getElementById("getpassword").placeholder = "The password fields must not be empty";
 				document.getElementById("getpasswordrepeat").placeholder = "The password fields must not be empty";
-				$("#getpassword").effect("shake");
-				$("#getpasswordrepeat").effect("shake");	
+					
 				flag = true;
 			}
 		
 			if (password != REpassword){
-				document.getElementById("getpassword").value = "";
-				document.getElementById("getpasswordrepeat").value = "";
-				document.getElementById("alert2").innerHTML = "The passwords that you entered do not match";
-				$("#getpassword").effect("shake");
-				$("#getpasswordrepeat").effect("shake");
+				passwordShake();
+				document.getElementById("getpassword").placeholder = "The passwords that you entered do not match";
+				document.getElementById("getpasswordrepeat").placeholder = "The passwords that you entered do not match";
 				flag = true;
 			}
 			
@@ -88,21 +94,22 @@
 						document.getElementById("getpassword").value = "";
 						document.getElementById("getpasswordrepeat").value = "";
 						window.location.replace("CWlogin.html");
-					} else {
-						document.getElementById("getusername").value = "";
-						document.getElementById("getpassword").value = "";
-						document.getElementById("getpasswordrepeat").value = "";
+					} else if (data == "illegal"){
+						userShake();
+						passwordShake();
 						document.getElementById("getusername").placeholder = "Only Letters and Numbers";
 						document.getElementById("getpassword").placeholder = "Only Letters and Numbers";
 						document.getElementById("getpasswordrepeat").placeholder = "Only Letters and Numbers";
-						$("#getpassword").effect("shake");
-						$("#getpasswordrepeat").effect("shake");
-						$("#getusername").effect("shake");
+					} else if (data == "exists"){
+						passwordShake();
+						userShake();
+						document.getElementById("getusername").placeholder = "Username taken";
+						document.getElementById("getpassword").placeholder = "";
+						document.getElementById("getpasswordrepeat").placeholder = "";
 					}
 				}, "json");
 
 			}
-		
 		}
 		</script>
 	</body>
