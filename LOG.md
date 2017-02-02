@@ -7,4 +7,5 @@
 <li>LOG 31/01/2917 16:01 Nyal -> Just testing github phone app. sup.</li>
 <li>LOG 01/02/2017 20:00 Jon -> header.php added -> just include this in head tags. Makes our site modular.</li>
 <li>LOG 01/02/2017 21:30 Nyal -> Updated signupper.php and signup.html so usernames must be unique.</li>
+<li>LOG 02/02/2017 18:30 Jon -> Made API Keys for TopRated and NewReleases hidden in PHP.</li>
 </ol>
