@@ -8,8 +8,6 @@ Everything about film.<br/>
 <ol>
 <li><strike>Merge Log In and Movie Search Site and get rid of any uneccessary features.</strike></li>
 <li>Discuss what main feature will be and implement.</li>
-<li><strong>Clean up code</strong> and get rid of shit not needed.</li>
-<li>Work on broken stuff section below</li>
 <li>PHPfy the rest of the site to hide API keys</li>
 <li>Make an Accounts preferences functionality. Shit like take the name and change pass and stuff. Also We could echo the First name instead of the username once this functionality is added. So like "Hello Jon" instead of "Hello ichbinjon"</li>
 
