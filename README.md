@@ -1,8 +1,7 @@
 # MovieApp
 Everything about film.<br/>
-Database Details: ns53 - abcns53354 - Table Name: users<br/>
 
-Don't forget to git pull before working!</br>
+
 <strong>Remember to update LOG file after working!</strong>
 
 <b>TODO(Also check Projects section on Github)</b>
@@ -15,10 +14,6 @@ Don't forget to git pull before working!</br>
 <li>Make an Accounts preferences functionality. Shit like take the name and change pass and stuff. Also We could echo the First name instead of the username once this functionality is added. So like "Hello Jon" instead of "Hello ichbinjon"</li>
 
 
-<li>Add cool shit.</li>
-<li>Learn more cool shit.</li>
-<li>Repeat 3. and 4.</li>
-<li>Buy Google</li>
 </ol>
 
 <b>Stuff to keep in mind when making changes</b>
